@@ -114,6 +114,7 @@ export default function Transactions({ currentMonthYear }) {
         fetchTrx();
       });
     }
+    setSelectedTrx('');
   };
 
   const handleClose = () => {
