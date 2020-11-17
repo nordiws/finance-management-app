@@ -1,7 +1,7 @@
-import { Router } from 'express';
+import app from 'express';
 import trxServices from '../services/transactionService.js';
 
-const transactionRouter = Router();
+const transactionRouter = app.Router();
 
 transactionRouter.get('/', trxServices.getTrx);
 transactionRouter.get('/:id', trxServices.getTrxById);
