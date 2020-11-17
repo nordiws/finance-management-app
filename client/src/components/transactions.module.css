@@ -1,0 +1,24 @@
+.index {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+.labels {
+  font-size: 0.8em;
+  margin: 0px;
+}
+
+.strong {
+  font-weight: bolder;
+}
+
+.value {
+  font-size: 1.5em;
+  margin: 0px;
+  padding: 0px;
+}
+
+.Menu__MenuTrigger {
+  cursor: pointer;
+}
