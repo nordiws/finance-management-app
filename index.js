@@ -3,13 +3,13 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import { routes } from './routes/routes.js';
 import path from 'path';
-import { config } from 'dotenv';
+import dotenv from 'dotenv';
 
 /**
  * Faz a leitura do arquivo
  * ".env" por padrão
  */
-config();
+dotenv.config();
 
 const app = express();
 app.use(cors());
