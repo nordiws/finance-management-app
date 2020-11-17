@@ -22,7 +22,7 @@ export default function Transaction(props) {
     <div className={cardColor}>
       <div className='col s1'>
         <span>
-          <p className={css.index}>{index + 1}</p>
+          <p className={css.index}>{trx.day}</p>
         </span>
       </div>
       <div className='col s11'>

@@ -173,12 +173,11 @@ export default function Transactions({ currentMonthYear }) {
       </div>
       <div>
         <ul>
-          {trx.map((transaction, index) => {
+          {trx.map((transaction) => {
             return (
               <li key={index}>
                 <Transaction
                   trx={transaction}
-                  index={index}
                   onHandleDelete={handleDeleteTrx}
                   onHandleEdit={handleEditTrx}
                 />
