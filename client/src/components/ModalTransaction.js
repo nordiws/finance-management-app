@@ -26,7 +26,7 @@ export default function ModalTransaction({ onSave, onClose, selectedTrx }) {
     const form = event.target.value.form;
     const updatedTrx = {
       description: form[2].value,
-      value: parseInt(form[4].value),
+      value: parseFloat(form[4].value.replace(',', '.')).toFixed(2),
       category: form[3].value,
       year: parseInt(form[5].value.slice(0, 4)),
       month: parseInt(form[5].value.slice(5, 7)),
