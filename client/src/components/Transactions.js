@@ -173,7 +173,7 @@ export default function Transactions({ currentMonthYear }) {
       </div>
       <div>
         <ul>
-          {trx.map((transaction) => {
+          {trx.map((transaction, index) => {
             return (
               <li key={index}>
                 <Transaction
